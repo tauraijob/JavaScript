@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title></title>
+</head>
+<body>
+	<div id="first">Tau</div>
+	<script>
+		function preBakeFunction() {
+			document.getElementById('first').innerHTML = "I changed";
+		}
+		function BakeFunction() {
+  			window.alert("Can you bake me")
+		}
+	</script>
+
+
+<button type="button" onclick="preBakeFunction()">Click Me</button>
+<button type="button" onclick="BakeFunction()">Bake</button>
+</body>
+</html>
