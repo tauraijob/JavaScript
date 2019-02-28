@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<title></title>
 </head>
 <body>
-	<div id="first">Tau</div>
-	<script>
-		function preBakeFunction() {
-			document.getElementById('first').innerHTML = "I changed";
-		}
-		function BakeFunction() {
-  			window.alert("Can you bake me")
-		}
-	</script>
+<p id="demo"></p>
 
+<script>
+var x = 5;
+var y = 6;
+var z = x + y;
+var k = y-x;
+var l = x*y;
+var h = x/y; 
+document.getElementById("demo").innerHTML =
+"The value of z is: " + z  + "<br/>" + "The value of k is:"+ k +"<br/>" +"Value of l is:" + l + "<br/>" + "Value of h is:" +h;
+</script>
 
-<button type="button" onclick="preBakeFunction()">Click Me</button>
-<button type="button" onclick="BakeFunction()">Bake</button>
 </body>
 </html>
+
+
