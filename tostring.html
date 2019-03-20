@@ -5,19 +5,20 @@
 </head>
 <body>
 <script>
-	function Person(name, surname, age, gender) {
+	function Person(name, surname, age, gender, interests) {
 		this.name = name;
 		this.surname = surname;
 		this.age = age;
 		this.gender = gender;
+		this.interests = interests;
 
 	
 	this.toString = function(){
-		document.write("Hi, my name is " + " " + name + " " + surname + " " + "I am " + " " + age + " " + "and I am a" + " " + gender + " "+ "<br>");
+		document.write("Hi, my name is " + " " + name + " " + surname + " " + "I am " + " " + age + " " + "and I am a" + " " + gender + " "+ "and i like" + " " + interests +  "<br>");
 	};
 };
-	var person1 = new Person ("Joy", "Jojo", 28, "female");
-	var person2 = new Person ("Melo", "Chapfugama", 25, "female");
+	var person1 = new Person ("Joy", "Jojo", 28, "female", ["movies", "love stories"]);
+	var person2 = new Person ("Melo", "Chapfugama", 25, "female", ["football", "food"]);
 	var person3= new Person ("Tatenda", "Marshal", 23, "male");
 	var person4 = new Person ("Spa", "Spathisiwe", 26, "female");
 
