@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+	function Person(name, surname, age, gender, interests) {
+		this.name = name;
+		this.surname = surname;
+		this.age = age;
+		this.gender = gender;
+		this.interests = interests;
+
+	
+	this.toString = function(){
+		document.write("Hi, my name is " + " " + name + " " + surname + " " + "I am " + " " + age + " " + "and I am a" + " " + gender + " "+ "and i like" + " " + interests +  "<br>");
+	};
+};
+	var person1 = new Person ("Joy", "Jojo", 28, "female", ["movies", "love stories"]);
+	var person2 = new Person ("Melo", "Chapfugama", 25, "female", ["football", "food"]);
+	var person3= new Person ("Tatenda", "Marshal", 23, "male", ["football", "food"]);
+	var person4 = new Person ("Spa", "Spathisiwe", 26, "female", ["football", "food"]);
+
+
+	person1.toString();
+	person2.toString();
+	person3.toString();
+	person4.toString();
+
+
+function ClassRoom(name, students){
+	this.name = name;
+	this.students = students;
+
+
+	this.averageAge = function() {
+		var totalAge = 0;
+			for (i=0; i<this.students.length;  i++){
+				totalAge += this.students[i].age;
+			}
+			var average = totalAge / this.students.length;
+			document.write("The average age of the class is " + average);
+	}
+}
+
+var class1 = new ClassRoom("Microworkspace", [person1, person2, person3, person4]);
+class1.averageAge();
+
+</script>
+</body>
+</html>
